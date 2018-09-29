@@ -1,0 +1,57 @@
+.basic_shape{
+	width:40px;
+	height:auto;
+	padding: 10px;
+
+}
+	.trougao{
+		content:url('../images/nav/trougao.png');
+		@extend .basic_shape;
+	}
+	.kvadrat{
+		content:url('../images/nav/kvadrat.png');
+		@extend .basic_shape;
+	}
+	.petougao{
+		content:url('../images/nav/petougao.png');
+		@extend .basic_shape;
+	}
+	.sestougao{
+		content:url('../images/nav/sestougao.png');
+		@extend .basic_shape;
+	}
+
+	.trougao:hover{
+		content:url('../images/nav/trougao_hover.png');
+	}
+	.kvadrat:hover{
+		content:url('../images/nav/kvadrat_hover.png');
+	}
+	.petougao:hover{
+		content:url('../images/nav/petougao_hover.png');
+	}
+	.sestougao:hover{
+		content:url('../images/nav/sestougao_hover.png');
+	}
+	
+	
+	.sidebar{
+		z-index: 999;
+		position: fixed;
+		background-image:url('../images/nav/linija.png');
+		background-repeat: no-repeat;
+		background-position: center;
+		width: 40px;
+		margin-top:350px;
+		right: calc(50% - 475px);
+	}
+	@media screen and (max-width:980px) {
+		.sidebar{
+		display: none;
+		}
+	}
+
+
+
+	
+	

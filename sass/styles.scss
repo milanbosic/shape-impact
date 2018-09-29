@@ -1,0 +1,404 @@
+$background_url: url("../images/bg.png")!important; 
+$page_width: 960px;
+
+
+html{
+background-color: #f4f4f4;
+}
+
+body{
+	max-width: $page_width;
+	min-width:320px!important;
+	margin:auto;
+	background-color: #white;
+}
+.menunav{
+	width: 960px;
+}
+
+#div1{
+	background-image: $background_url;
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	color:white;
+}
+
+
+#tablet{
+	z-index:98;
+	width: 80%;
+	height:auto;
+	position: relative; bottom: 10%; left: 10%;
+}
+
+#gp{
+	width:20%;
+	height: auto;
+}
+
+#shadow{
+	z-index:97;
+	width: 60%;
+	height:auto;
+	position: relative; bottom: 10%; left: 20%;
+}
+
+#arrow{
+	z-index:97;
+	width: 20%;
+	height:auto;
+	position: relative; top: 120px; right: 200px;
+}
+
+#letter{
+	z-index:98;
+	width: 40%;
+	height:auto;
+	position: relative; top: 115px; right: 150px;
+}
+
+#gp2{
+margin-left:95px!important;
+
+}
+
+#joke{
+margin-top: -110px;
+
+}
+
+
+.slog{
+	float: left;
+	text-align: left;
+
+	margin-top: 30px;
+	color: #cdcdcd;
+
+}
+.slogan{
+	@extend .slog;
+	margin-left: 200px;
+}
+
+.slogan2{
+@extend .slog;
+margin-left:100px!important;
+
+}
+
+
+
+$bullet-size: 45px;
+
+.bullet{
+	margin-right:15px;
+	content: " ";
+    display: inline-block;
+    width: $bullet-size; 
+    height: $bullet-size;
+	background-size: $bullet-size $bullet-size;
+}
+
+
+.welcome:before {
+	background-image:url('../images/icons/kvadrat_bullet.png');
+	@extend .bullet;
+}
+
+.gallery:before {
+	background-image:url('../images/icons/trougao_bullet.png');	
+	@extend .bullet;
+}
+
+.likesupp:before {
+	background-image:url('../images/icons/petougao_bullet.png');
+	@extend .bullet;
+}
+
+.break{
+	margin-top: 100px;
+	background-image:url('../images/spacer.png');
+	background-repeat: repeat-x;
+	content: " ";
+    display: block;
+    width: 100%;
+    height: 45px;
+	background-size: 100%;
+}
+
+.footer .row{ 
+	background-color: #d9d9d9;
+	color:#444444;
+}
+
+
+
+
+@media screen and (max-width: 700px){
+	
+		#tablet{
+			
+			width:90%;
+			position: relative; bottom: 10%; left: 5%;
+		}
+
+}
+
+
+@media screen and (max-width: 980px){
+	
+		#tablet{
+			
+			width:90%;
+			position: relative; bottom: 10%; left: 5%;
+			
+		}
+				
+			#joke{
+			width:400px!important;
+		}
+
+}
+
+.social{
+
+border-radius: 50%;
+	color: white;
+	width:50px;
+	height:50px;
+	 padding-top: 13px;
+}
+
+.fb{
+	@extend .social;
+	background-color:#47609d;
+}
+.tw{
+	@extend .social;
+	background-color:#65a8de;
+}
+.gp{
+	@extend .social;
+	background-color:#c25646;
+}
+.li{
+	@extend .social;
+	background-color:#3f6d9a;
+}
+.yt{
+	@extend .social;
+	background-color:#ce353a;
+}
+
+#divbreak2{
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+
+
+
+
+
+.footer-distributed{
+	background-color: #292c2f;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: normal 16px sans-serif;
+
+	padding: 45px 50px;
+	margin-top: 80px;
+}
+
+.footer-distributed .footer-left p{
+	color:  #8f9296;
+	font-size: 14px;
+	margin: 0;
+}
+
+/* Footer links */
+
+.footer-distributed p.footer-links{
+	font-size:18px;
+	font-weight: bold;
+	color:  #ffffff;
+	margin: 0 0 10px;
+	padding: 0;
+}
+
+.footer-distributed p.footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-right{
+	float: right;
+	margin-top: 6px;
+	max-width: 180px;
+}
+
+.footer-distributed .footer-right a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-left: 3px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 600px) {
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-right{
+		text-align: center;
+	}
+
+	.footer-distributed .footer-right{
+		float: none;
+		margin: 0 auto 20px;
+	}
+
+	.footer-distributed .footer-left p.footer-links{
+		line-height: 1.8;
+	}
+	#div1{
+
+		background-size: 140% auto;
+
+	}
+	#joke{
+	width:400px!important;
+	margin-right:auto!important;
+	margin-left:auto!important;
+	float:none!important;
+	margin-right:0px;
+	}		
+	.slogan{
+		margin-left: auto!important;
+
+	}
+		#youtube{
+		margin-top:60px!important;
+	
+	}
+
+	
+}
+
+
+
+
+@media (max-width: 550px) {
+	#youtube{
+		width:375px;
+	
+	}
+		#arrow {
+
+		position: static!important; top: 0px!important; right: 0px!important;
+	}
+	
+	
+	
+}
+
+
+@media (max-width: 554px) {
+
+		#arrow {
+
+		position: static!important; top: 50px!important; right: 50px!important;
+	}
+		#youtube{
+		margin-top:10px!important;
+	
+	}
+	
+	
+}
+
+
+
+
+@media (max-width: 375px) {
+	#youtube{
+		width:355px;
+	
+	}
+}
+
+@media (max-width: 360px) {
+	#youtube{
+		width:290px;
+		margin-top:10px!important;
+	
+	}
+	#div1{
+		background-size: 180% auto;
+
+	}
+	
+
+	
+}
+
+@media (max-width: 420px) {
+
+			#joke{
+			width:300px!important;
+			margin-right:auto!important;
+			margin-left:auto!important;
+			float:none!important;
+		}
+
+
+}
+
+
+@media (max-width: 992px) {
+	#arrow{
+		width: 150px;
+	}
+	.slogan{
+		margin-left: 200px!important;
+	}
+	
+	.slogan2{
+		margin-left: 50px!important;
+	}
+	
+	#gp2{
+		margin-left: 50px!important;
+	}
+}
+
+
+@media(max-width:770px){
+	#joke{
+		margin-top: 50px;
+		margin-right:auto;
+		margin-left:auto;
+		float: none!important;
+	}
+	
+		.slogan{
+		margin-left: 11%!important;
+	}
+
+}
